@@ -1,0 +1,78 @@
+<html>
+<head>
+<script type="text/javascript">
+function check(){
+	var a=document.getElementById("new");
+	var b=document.getElementById("conf");	
+	if(a.value.length<8)
+	{
+		alert("The password must contain atleast 8 characters");
+	}
+
+
+	if(a.value!=b.value)
+	{
+		alert("The confirm password is not matching with the New password entered");
+	}
+}
+</script>
+</head>
+<body> 
+<h2 align="center"> Registration form </h2>
+ 
+<form action="" method="post">
+<table align="center" cellspacing="5px" cxellpadding="5%";align="center">
+<tr> 
+	<td align="right">First name: </td>
+	<td><input type="text" name="text1" id="fname"/></td>
+</tr>
+<tr>
+	<td align="right">Middle name: </td>
+	<td><input type="text" name="text2" id="mname"/></td>
+</tr>
+<tr>
+	<td align="right">Last  name: </td>
+	<td><input type="text" name="text3" id="lname"/></td>
+</tr>
+<tr>
+	<td align="right"> Date of Birth: </td>
+	<td><input type="date" name="date1" id="date"/></td>
+</tr>
+<tr>
+	<td align="right"> Gender: </td>
+	<td>
+		<input type="radio" name="gender" value="male"/> Male
+		<input type="radio" name="gender" value="female"/> Female 
+	</td>
+</tr>
+<tr>
+	<td align="right"> Contact number </td>
+	<td><input type="number" name="numb" id="num"/></td>
+</tr>
+<tr>
+	<td align="right"> Email: </td>
+	<td><input type="email" name="mail" id="mail"/> </td>
+	<td>(THE SAME MAIL ID WILL BE USED AS THE USER NAME FOR THE LOGIN) </td>
+</tr>
+<tr>
+	<td align="right"> New password: </td>
+	<td><input type="password" id="new"/> </td>
+	<td>(Must contain atleast 8 characters) </td>
+</tr>
+<tr>
+	<td align="right"> Confirm password: </td>
+	<td><input type="password" id="conf"/></td>
+</tr>
+<tr>
+	<td align="right"> Residential address </td>
+	<td><input type="textarea" name="address" id="addr"/> </td>
+</tr>
+<tr>
+	<td> <button onclick="check();"> submit </button>
+	<td> <input type="button" value="Reset" align="right"/></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+	
